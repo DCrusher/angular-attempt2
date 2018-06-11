@@ -28,6 +28,30 @@ export class DataFetchingService {
       );
   }
 
+  add(dataEndpoint: string, item: any): Observable<any> {
+    return this.http.post<any>(dataEndpoint, item, httpOptions).pipe(
+      tap((_item: any) => this.log(`added item w/ id=${item.id}`)),
+      catchError(this.handleError<any>('addItem'))
+    );
+  }
+
+  update(dataEndpoint: string, item: any): Observable<any> {
+    return this.http.put(dataEndpoint, item, httpOptions).pipe(
+      tap(_ => this.log(`updated item id=${item.id}`)),
+      catchError(this.handleError<any>('updateItem'))
+    );
+  }
+
+  search(dataModel: any, term: string): Observable<any[]> {
+    if (!term.trim()) {
+      // if not search term, return empty item array.
+      return of([]);
+    }
+    return this.http.get<any[]>(`${dataModel.apiEndpoint}/?name=${term}`).pipe(
+      tap(_ => this.log(`found items matching "${term}"`)),
+      catchError(this.handleError<any[]>('searchItemes', []))
+    );
+  }
   /**
    * Handle Http operation that failed.
    * Let the app continue.

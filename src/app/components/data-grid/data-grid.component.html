@@ -14,8 +14,9 @@
   enableColResize
   rowSelection="single"
   [rowData]="records"
-  [columnDefs]="tableFields"
+  [columnDefs]="fields"
   (rowSelected)="onRowSelected($event)"
+  (rowDoubleClicked)="onRowDoubleClicked($event)"
   (gridReady)="onGridReady($event)"
 >
 </ag-grid-angular>

@@ -1,5 +1,6 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ViewChild } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { DynamicFormComponent } from '../../dynamic-form/dynamic-form.component';
 
 @Component({
   selector: 'app-instance-dialog',
@@ -7,6 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
   styleUrls: ['./instance-dialog.component.css']
 })
 export class InstanceDialogComponent  {
+  @ViewChild('dynamicForm')
+  private dynamicForm: DynamicFormComponent;
 
   constructor(
     public dialogRef: MatDialogRef<InstanceDialogComponent>,
@@ -16,5 +19,11 @@ export class InstanceDialogComponent  {
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  onOkClick(): void {
+    this.dialogRef.close(
+      this.dynamicForm.getValues()
+    );
   }
 }

@@ -187,6 +187,14 @@
   dependencies:
     tslib "^1.9.0"
 
+"@ng-dynamic-forms/core@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/core/-/core-6.0.6.tgz#1e69cf43b4e7ab8bcace780e9f7deb61bbdd49b8"
+
+"@ng-dynamic-forms/ui-material@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-material/-/ui-material-6.0.6.tgz#06b43031cf0ad9e77edfe07a8b533cfddfe66ec2"
+
 "@ngtools/webpack@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.0.8.tgz#a05bce526aee9da62bb230a95fba83fee99d0bca"
@@ -471,6 +479,12 @@ amdefine@>=0.0.4:
 angular-in-memory-web-api@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.6.0.tgz#28262d6f7cdf1415c1d540c1a5cb838d58cb602a"
+
+angular2-text-mask@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/angular2-text-mask/-/angular2-text-mask-9.0.0.tgz#70490170a8096241fc3ce9482ed6a758ddbce8ea"
+  dependencies:
+    text-mask-core "^5.0.0"
 
 ansi-html@0.0.7:
   version "0.0.7"
@@ -5690,6 +5704,10 @@ stream-shift@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/stream-shift/-/stream-shift-1.0.0.tgz#d5c752825e5367e786f78e18e445ea223a155952"
 
+string-template@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/string-template/-/string-template-1.0.0.tgz#9e9f2233dc00f218718ec379a28a5673ecca8b96"
+
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
@@ -5830,6 +5848,10 @@ tar@^4:
     mkdirp "^0.5.0"
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
+
+text-mask-core@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/text-mask-core/-/text-mask-core-5.1.1.tgz#a7f65634e11236818fd36a92668e17bf9368f357"
 
 through2@^2.0.0:
   version "2.0.3"

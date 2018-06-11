@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import Power from '../../models/power';
 
 @Component({
   selector: 'app-powers-page',
   templateUrl: './powers-page.component.html',
   styleUrls: ['./powers-page.component.css']
 })
-export class PowersPageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class PowersPageComponent {
+  public powerModel = new Power();
 }

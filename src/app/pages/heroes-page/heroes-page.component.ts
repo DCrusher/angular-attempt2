@@ -1,35 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { DataFetchingService } from '../../services/data-fetching.service';
+import { Component } from '@angular/core';
 
-import Hero from '../../models/Hero';
+import Hero from '../../models/hero';
 
 @Component({
   selector: 'app-heroes-page',
   templateUrl: './heroes-page.component.html',
   styleUrls: ['./heroes-page.component.css']
 })
-export class HeroesPageComponent implements OnInit {
-  public heroes: any[];
-  public tableFields: any[];
-  public instanceFields: any[];
-  public heroModel: Hero;
+export class HeroesPageComponent {
+  public heroModel = new Hero();
 
-  constructor(
-    private dataService: DataFetchingService
-  ) {
-    this.heroModel = new Hero();
-    this.tableFields = this.heroModel.fieldsToView();
-    this.instanceFields = this.heroModel.fieldsToManipulate();
-  }
+  // constructor(
+  //   private dataService: DataFetchingService
+  // ) {
+  //   this.heroModel =
+  // }
 
-  ngOnInit() {
-    this.getData();
-  }
+  // ngOnInit() {
+  //   this.getData();
+  // }
 
-  getData(): void {
-    this.dataService.getData(this.heroModel.endpoint())
-    .subscribe(heroes => {
-      this.heroes = heroes;
-    });
-  }
+  // getData(): void {
+  //   this.dataService.getData(this.heroModel.endpoint())
+  //   .subscribe(heroes => {
+  //     this.heroes = heroes;
+  //   });
+  // }
 }

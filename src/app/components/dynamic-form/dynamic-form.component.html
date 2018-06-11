@@ -1,12 +1,26 @@
 
-<form [formGroup]="dynamicForm">
+<!--
+<form [formGroup]="formGroup">
 
   <app-dynamic-form-field
     *ngFor="let field of fields"
     [field]="field"
-    [formGroup]="dynamicForm"
+    [formGroup]="formGroup"
   >
   </app-dynamic-form-field>
 
   <button mat-button (click)="onClickTest()">TEST</button>
-</form>
+</form> -->
+
+
+
+<dynamic-material-form
+  [group]="formGroup"
+  [model]="formModel"
+>
+
+</dynamic-material-form>
+
+
+  <!-- <button mat-button (click)="onClickTest()">TEST</button> -->
+

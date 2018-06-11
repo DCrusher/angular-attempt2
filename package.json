@@ -22,11 +22,16 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@ng-dynamic-forms/core": "^6.0.6",
+    "@ng-dynamic-forms/ui-material": "^6.0.6",
     "ag-grid": "^17.1.1",
     "ag-grid-angular": "^17.1.0",
     "ag-grid-enterprise": "^17.1.1",
+    "angular2-text-mask": "^9.0.0",
     "core-js": "^2.5.4",
+    "lodash": "^4.17.10",
     "rxjs": "^6.0.0",
+    "string-template": "^1.0.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

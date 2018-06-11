@@ -1,0 +1,28 @@
+<ng-container [formGroup]="group">
+
+  <app-relation-field [formControlName]="model.id"
+                      [formGroup]="group"
+                      [id]="bindId ? model.id : null"
+                      [name]="model.name"
+                      [value]="model.value"
+                      [placeholder]="model.placeholder"
+                      [relation]="model.additional"
+                      [ngClass]="[getClass('element', 'control'), getClass('grid', 'control')]"
+                      (blur)="onBlur($event)"
+                      (change)="onChange($event)"
+                      (focus)="onFocus($event)">
+  </app-relation-field>
+
+</ng-container>
+
+<!-- <ng-container [formGroup]="group">
+
+  <my-custom-form-control [formControlName]="model.id"
+                          [id]="bindId ? model.id : null"
+                          [name]="model.name"
+                          [ngClass]="[getClass('element', 'control'), getClass('grid', 'control')]"
+                          (blur)="onBlur($event)"
+                          (change)="onChange($event)"
+                          (focus)="onFocus($event)"></my-custom-form-control>
+
+</ng-container> -->

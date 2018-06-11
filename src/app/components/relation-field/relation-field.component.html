@@ -8,14 +8,85 @@
   >
 </mat-form-field> -->
 
+<div id="relationContainer">
 
-<mat-form-field
-  [formGroup]="form"
+  <button
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="dictionary.toggle()">
+    <mat-icon aria-label="Side nav toggle icon">
+      <i class="material-icons">
+        library_books
+      </i>
+    </mat-icon>
+  </button>
+  <mat-sidenav
+    #dictionary
+    id="relationDictionary"
+    fixedInViewport="true"
+    [attr.role]="'relation dictionary'"
+    [mode]="'over'"
+    [opened]="false"
+    [position]="end"
+    >
+    <mat-toolbar
+      id="relationDictionaryHeader"
+    >
+      <span>
+        {{ relation.dataModel.name }}
+      </span>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="dictionary.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">
+          <i class="material-icons">
+            close
+          </i>
+        </mat-icon>
+      </button>
+    </mat-toolbar>
+    <app-data-grid
+      [model]="relation.dataModel"
+      (rowSelected)="onTableRowSelected($event.data)"
+    >
+
+    </app-data-grid>
+  </mat-sidenav>
+
+  <mat-form-field>
+
+    <input
+      matInput
+      type="text"
+      [placeholder]="placeholder"
+      (keyup)="search($event.target.value)"
+      [matAutocomplete]="auto"
+      [(ngModel)]="inputText"
+    />
+    <!-- (input)="onInput($event)" -->
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option
+        *ngFor="let item of items$ | async"
+        [value]="item"
+        (click)="onSelectItem(item)"
+      >
+        {{item.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+</div>
+<!-- <mat-form-field
+  [formGroup]="formGroup"
 >
+  relation:
   <input
     matInput
     [type]="text"
     [formControlName]="field.name"
     [placeholder]="field.caption"
   >
-</mat-form-field>
+</mat-form-field> -->

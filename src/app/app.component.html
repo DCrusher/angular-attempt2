@@ -1,6 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
     #drawer
+    fixedInViewport
     class="sidenav"
     fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -25,8 +26,9 @@
       </button>
     </mat-toolbar>
 
-    <mat-card>
+    <main>
       <router-outlet></router-outlet>
-    </mat-card>
+    </main>
+
   </mat-sidenav-content>
 </mat-sidenav-container>

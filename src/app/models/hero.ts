@@ -1,7 +1,9 @@
-
-import BaseDataModel from './base-data-model';
+import BaseModel from './base-model';
+import Power from './power';
+import { isObject } from 'lodash';
 
 const API_ENDPOINT = 'api/heroes';
+const MODEL_NAME = 'Hero';
 const FIELDS = [
   {
     name: 'id',
@@ -24,13 +26,26 @@ const FIELDS = [
     caption: 'Power',
     type: 'relation',
     sort: true,
-    filter: true
+    filter: true,
+    cellRenderer: (data) => {
+      const { value } = data;
+
+      if (isObject(value)) {
+        return `${value.name} (haz: <span style="color: red;">${value.hazard})</span>`;
+      } else {
+        return value;
+      }
+    },
+    relation: {
+      dataModel: new Power(),
+      selectedTemplate: "{name} (haz: {hazard})"
+    }
   }
 ];
 
-export default class Hero extends BaseDataModel {
+export default class Hero extends BaseModel {
 
   constructor() {
-    super('Hero', FIELDS, API_ENDPOINT);
+    super(MODEL_NAME, FIELDS, API_ENDPOINT);
   }
 }

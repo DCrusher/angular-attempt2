@@ -1,0 +1,12 @@
+#relationContainer {
+  display: flex;
+}
+#relationDictionary {
+  right: 0px;
+  min-width: 500px;
+}
+
+#relationDictionaryHeader {
+  display: flex;
+  justify-content: space-between;
+}

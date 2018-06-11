@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
+// import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { DynamicFormControlModel, DynamicFormControl, DynamicFormService, DYNAMIC_FORM_CONTROL_MAP_FN } from '@ng-dynamic-forms/core';
+// import { DynamicRelationFieldComponent } from '../dynamic-relation-field/dynamic-relation-field.component';
 
 @Component({
   selector: 'app-dynamic-form',
@@ -7,23 +10,25 @@ import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Valida
   styleUrls: ['./dynamic-form.component.css']
 })
 export class DynamicFormComponent implements OnInit {
-  @Input() fields: any[];
+  @Input() model: any;
+  @Input() instance: any;
 
-  dynamicForm: FormGroup;
+  formModel: DynamicFormControlModel[];
+  formGroup: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private formService: DynamicFormService) {
+  }
+
+  getValues() {
+    return this.formGroup.value;
+  }
 
   ngOnInit() {
-    const formControls = {};
-
-    this.fields.forEach(field => {
-      formControls[field.name] = new FormControl(field.value);
-    });
-
-    this.dynamicForm = this.fb.group(formControls);
+    this.formModel = this.model.dynamicFormModel(this.instance);
+    this.formGroup = this.formService.createFormGroup(this.formModel);
   }
 
   onClickTest() {
-    console.log(this.dynamicForm.value);
+    console.log(this.formGroup.value);
   }
 }
