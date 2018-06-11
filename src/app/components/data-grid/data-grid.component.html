@@ -1,0 +1,21 @@
+<button
+  type="button"
+  mat-button
+  (click)="onClickCreateButton()"
+>
+  Create
+</button>
+
+<ag-grid-angular
+  class="ag-theme-balham"
+  style="width: 100%; height: 500px;"
+  enableSorting
+  enableFilter
+  enableColResize
+  rowSelection="single"
+  [rowData]="records"
+  [columnDefs]="tableFields"
+  (rowSelected)="onRowSelected($event)"
+  (gridReady)="onGridReady($event)"
+>
+</ag-grid-angular>

@@ -1,0 +1,12 @@
+
+<form [formGroup]="dynamicForm">
+
+  <app-dynamic-form-field
+    *ngFor="let field of fields"
+    [field]="field"
+    [formGroup]="dynamicForm"
+  >
+  </app-dynamic-form-field>
+
+  <button mat-button (click)="onClickTest()">TEST</button>
+</form>
