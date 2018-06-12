@@ -49,7 +49,7 @@ export class DataGridComponent implements OnInit {
     const instance = event.data;
 
     const dialogRef = this.dialog.open(InstanceDialogComponent, {
-      width: '250px',
+      width: '300px',
       data: {
         caption: 'Edit',
         instance: instance,
@@ -71,7 +71,7 @@ export class DataGridComponent implements OnInit {
 
   onClickCreateButton(): void {
     const dialogRef = this.dialog.open(InstanceDialogComponent, {
-      width: '250px',
+      width: '300px',
       data: {
         caption: 'Create',
         model: this.model

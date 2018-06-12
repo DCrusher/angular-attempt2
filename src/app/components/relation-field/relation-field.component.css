@@ -11,10 +11,16 @@
   justify-content: space-between;
 }
 
+.toggle-panel-button {
+  margin: 0 5px;
+}
+
 .relation-input {
   display: flex;
 }
 
 .clear-link {
   cursor: pointer;
+  position: relative;
+  top: 17px;
 }

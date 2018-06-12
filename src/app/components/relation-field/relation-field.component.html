@@ -11,6 +11,7 @@
 <div id="relationContainer">
 
   <button
+    class="toggle-panel-button"
     type="button"
     aria-label="Toggle sidenav"
     mat-icon-button
@@ -68,11 +69,6 @@
       [matAutocomplete]="auto"
       [(ngModel)]="inputText"
     />
-    <span
-      class="clear-link"
-      *ngIf="selected || inputText"
-      (click)="onClickClearSelected()"
-    >×</span>
 
     <mat-autocomplete #auto="matAutocomplete">
       <mat-option
@@ -84,7 +80,12 @@
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
-
+  <span
+    class="clear-link"
+    title="clear"
+    *ngIf="selected || inputText"
+    (click)="onClickClearSelected()"
+  >×</span>
 </div>
 <!-- <mat-form-field
   [formGroup]="formGroup"
