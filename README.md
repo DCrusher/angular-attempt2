@@ -5,10 +5,8 @@ Test project for investigation enterprise abilities of the Angular environment.
 # Starting of the project
 
 - `git clone https://github.com/DCrusher/angular-attempt2`
-
 - `cd angular-attempt2`
 - `yarn install`
-
 - `yarn start`
 
 Open in browser the url http://localhost:4200
@@ -18,6 +16,10 @@ Open in browser the url http://localhost:4200
 * Dashboard - testing of two relation fields
 * Heroes    - table of heroes with an ability to create and to update instances. Also here there is an ability to select related instances from the Power entity.
 * Powers    - table of powers dictionary with an ability to create and to update instances.
+
+## Actions of tables
+* button "Create" -> a dialog of creation a new instance;
+* double click on a row of the table -> a dialog of updating an existing instance;
 
 # Links
 
