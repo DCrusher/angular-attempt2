@@ -1,27 +1,29 @@
 # AngularAttempt2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Test project for investigation enterprise abilities of the Angular environment.
 
-## Development server
+# Starting of the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- `git clone https://github.com/DCrusher/angular-attempt2`
 
-## Code scaffolding
+- `cd angular-attempt2`
+- `yarn install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `yarn start`
 
-## Build
+Open in browser the url http://localhost:4200
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Pages
 
-## Running unit tests
+* Dashboard - testing of two relation fields
+* Heroes    - table of heroes with an ability to create and to update instances. Also here there is an ability to select related instances from the Power entity.
+* Powers    - table of powers dictionary with an ability to create and to update instances.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Links
 
-## Running end-to-end tests
+Basic kit & styles:
+* [Material UI](https://material.angular.io/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Libraries:
+* Data Table   - [AG Grid Angular](https://www.ag-grid.com/best-angular-2-data-grid/)
+* Dynamic Form - [NG Dynamic Forms](https://github.com/udos86/ng-dynamic-forms#form-control-configuration)
