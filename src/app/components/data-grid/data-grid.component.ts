@@ -39,8 +39,10 @@ export class DataGridComponent implements OnInit {
   }
 
   onRowSelected(event): void {
-    this.selectedRow = event.data;
-    this.rowSelected.emit(event);
+    if (event.node.selected) {
+      this.selectedRow = event.data;
+      this.rowSelected.emit(event);
+    }
   }
 
   onRowDoubleClicked(event): void {

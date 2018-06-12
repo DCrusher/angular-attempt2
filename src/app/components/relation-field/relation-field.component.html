@@ -56,7 +56,9 @@
     </app-data-grid>
   </mat-sidenav>
 
-  <mat-form-field>
+  <mat-form-field
+    class="relation-input"
+  >
 
     <input
       matInput
@@ -66,7 +68,12 @@
       [matAutocomplete]="auto"
       [(ngModel)]="inputText"
     />
-    <!-- (input)="onInput($event)" -->
+    <span
+      class="clear-link"
+      *ngIf="selected || inputText"
+      (click)="onClickClearSelected()"
+    >×</span>
+
     <mat-autocomplete #auto="matAutocomplete">
       <mat-option
         *ngFor="let item of items$ | async"

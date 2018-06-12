@@ -58,6 +58,11 @@ export class RelationFieldComponent implements ControlValueAccessor, OnInit {
     this.inputText = this.getSelectedItem(item);
   }
 
+  onClickClearSelected() {
+    this.selected = null;
+    this.inputText = '';
+  }
+
   getSelectedItem(item) {
     const { selectedTemplate } = this.relation;
 
