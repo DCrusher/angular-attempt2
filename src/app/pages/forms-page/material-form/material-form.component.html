@@ -1,0 +1,113 @@
+<form class="example-form">
+  <ul>
+
+    <li>
+      <mat-form-field>
+        <mat-select placeholder="Fee Type">
+          <mat-option>None</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field style="width: 50%;" class="example-full-width">
+        <input matInput placeholder="Amount">
+      </mat-form-field>
+    </li>
+
+
+    <li>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Paid">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Status">
+          <mat-option>None</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </li>
+
+
+    <li>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Pay">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-select placeholder="To">
+            <mat-option>None</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Search">
+        </mat-form-field>
+    </li>
+
+
+    <li id="inscriptionRow">
+        Distribute the remaining amount to the loan lenders by % owned
+    </li>
+
+
+    <li>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Charge Interest">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker2" placeholder="From Date">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker3" placeholder="To">
+        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+        <mat-datepicker #picker3></mat-datepicker>
+      </mat-form-field>
+    </li>
+
+
+    <li>
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Memo"></textarea>
+      </mat-form-field>
+    </li>
+
+
+    <li id="paymentsRow">
+      <p>Payments</p>
+
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="Payment">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.Payment}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Payment Date">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element['Payment Date']}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Principal Paid">
+            <th mat-header-cell *matHeaderCellDef> Principal Paid </th>
+            <td mat-cell *matCellDef="let element"> {{element['Principal Paid']}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Interest Paid">
+            <th mat-header-cell *matHeaderCellDef> Interest Paid </th>
+            <td mat-cell *matCellDef="let element"> {{element['Interest Paid']}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </li>
+  </ul>
+</form>

@@ -33,13 +33,20 @@ import {
   MatCardModule,
   MatDialogModule,
   MatFormFieldModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  MatTabsModule,
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatTableModule
 } from '@angular/material';
 import { DataGridComponent } from './components/data-grid/data-grid.component';
 import { InstanceDialogComponent } from './components/data-grid/instance-dialog/instance-dialog.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { RelationFieldComponent } from './components/relation-field/relation-field.component';
 import { DynamicRelationFieldComponent } from './components/dynamic-relation-field/dynamic-relation-field.component';
+import { FormsPageComponent } from './pages/forms-page/forms-page.component';
+import { MaterialFormComponent } from './pages/forms-page/material-form/material-form.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +59,9 @@ import { DynamicRelationFieldComponent } from './components/dynamic-relation-fie
     InstanceDialogComponent,
     DynamicFormComponent,
     RelationFieldComponent,
-    DynamicRelationFieldComponent
+    DynamicRelationFieldComponent,
+    FormsPageComponent,
+    MaterialFormComponent
   ],
   entryComponents: [
     InstanceDialogComponent,
@@ -87,6 +96,11 @@ import { DynamicRelationFieldComponent } from './components/dynamic-relation-fie
     MatDialogModule,
     MatFormFieldModule,
     MatAutocompleteModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatTableModule
   ],
   providers: [
     DataFetchingService,
