@@ -3,47 +3,50 @@ import {
   DynamicInputModel,
   DynamicSelectModel,
   DynamicTextAreaModel,
+  DynamicFormGroupModel
 } from '@ng-dynamic-forms/core';
 import { of } from 'rxjs/observable/of';
 
 export const SAMPLE_FORM_MODEL = [
-  new DynamicSelectModel<string>({
+  new DynamicFormGroupModel({
 
-      id: 'demoSelect',
-      label: 'Fee Type',
-      options: of([
-          {
-              label: 'Option 1',
-              value: 'option-1',
-          }
-      ])
-  }),
-  new DynamicInputModel({
-      id: 'demoInput',
-      label: 'Amount',
-      maxLength: 51,
-      placeholder: 'Amount',
+    id: 'row0',
+    group: [
+      new DynamicSelectModel<string>({
+
+        id: 'demoSelect',
+        label: 'Fee Type',
+        options: of([
+            {
+                label: 'Option 1',
+                value: 'option-1',
+            }
+        ])
+      }),
+      new DynamicInputModel({
+        id: 'demoInput',
+        label: 'Amount',
+        maxLength: 51,
+        placeholder: 'Amount',
+      }),
+    ]
   }),
   new DynamicDatePickerModel({
-
-      id: 'demoDatePicker',
-      label: 'Date',
-      toggleLabel: 'Open',
-      placeholder: 'Date',
-      value: new Date(),
-      additional: {
-          containerClass: 'theme-red'
-      }
+    id: 'demoDatePicker',
+    label: 'Date',
+    inline: false,
+    toggleLabel: 'Open',
+    placeholder: 'Date',
   }),
   new DynamicSelectModel<string>({
-      id: 'demoSelect2',
-      label: 'Status',
-      options: of([
-          {
-              label: 'Bill',
-              value: 'bill',
-          }
-      ])
+    id: 'demoSelect2',
+    label: 'Status',
+    options: of([
+        {
+            label: 'Bill',
+            value: 'bill',
+        }
+    ])
   }),
   new DynamicInputModel({
       id: 'demoInput2',
