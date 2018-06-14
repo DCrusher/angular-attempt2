@@ -1,11 +1,6 @@
 // 'use strict';
 // Object.defineProperty(exports, "__esModule", { value: true });
 export const SAMPLE_FORM_LAYOUT = {
-    'row0': {
-      element: {
-        container: 'display-flex',
-      }
-    },
     'demoSelect': {
     },
     'demoInput': {

@@ -1,0 +1,38 @@
+#row0, #row1, #row2, #row3  {
+  display: flex;
+  align-items: flex-end;
+}
+
+#row0 > *, #row1 > *, #row2 > *, #row3 > *{
+  margin-left: 5px;
+}
+
+#row0 > :first-child {
+  width: 60%;
+}
+
+#row1 > *,
+#row2 > *,
+#row3 > * {
+  width: 30%;
+}
+
+#row0 > :last-child,
+#row1 > :last-child,
+#row2 > :last-child,
+#row3 > :last-child {
+  width: 40%;
+}
+
+.k-widget, textarea {
+  width: 100% !important;
+}
+
+#row3 {
+  padding-top: 40px;
+}
+
+#inscriptionMark {
+  position: absolute;
+  margin-left: -60px;
+}
