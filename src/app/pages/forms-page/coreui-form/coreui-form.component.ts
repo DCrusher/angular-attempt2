@@ -2,19 +2,18 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DynamicFormControlModel, DynamicFormLayout, DynamicFormService } from '@ng-dynamic-forms/core';
 
-import { SAMPLE_FORM_LAYOUT } from './bootstrap-form.layout';
-import { SAMPLE_FORM_MODEL } from './bootstrap-form.model';
+import { SAMPLE_FORM_LAYOUT } from './coreui-form.layout';
+import { SAMPLE_FORM_MODEL } from './coreui-form.model';
 
 @Component({
-  selector: 'app-bootstrap-form',
-  templateUrl: './bootstrap-form.component.html',
+  selector: 'app-coreui-form',
+  templateUrl: './coreui-form.component.html',
   encapsulation: ViewEncapsulation.Native,
   styleUrls: [
-    './bootstrap-form.component.css',
-    '../../../../../node_modules/bootstrap3/dist/css/bootstrap.min.css'
+    './coreui-form.component.scss'
   ]
 })
-export class BootstrapFormComponent implements OnInit {
+export class CoreuiFormComponent implements OnInit {
   formModel: DynamicFormControlModel[] = SAMPLE_FORM_MODEL;
   formLayout: DynamicFormLayout = SAMPLE_FORM_LAYOUT;
   formGroup: FormGroup;

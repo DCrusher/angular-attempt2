@@ -7,6 +7,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AgGridModule } from 'ag-grid-angular';
 
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {
   DynamicFormsCoreModule,
@@ -18,6 +19,7 @@ import {
 import { DynamicFormsMaterialUIModule } from '@ng-dynamic-forms/ui-material';
 import { DynamicFormsBootstrapUIModule } from '@ng-dynamic-forms/ui-bootstrap';
 import { DynamicFormsFoundationUIModule } from '@ng-dynamic-forms/ui-foundation';
+import { DynamicFormsNGBootstrapUIModule } from '@ng-dynamic-forms/ui-ng-bootstrap';
 
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { DataFetchingService } from './services/data-fetching.service';
@@ -56,6 +58,7 @@ import { FormsPageComponent } from './pages/forms-page/forms-page.component';
 import { MaterialFormComponent } from './pages/forms-page/material-form/material-form.component';
 import { BootstrapFormComponent } from './pages/forms-page/bootstrap-form/bootstrap-form.component';
 import { FoundationFormComponent } from './pages/forms-page/foundation-form/foundation-form.component';
+import { CoreuiFormComponent } from './pages/forms-page/coreui-form/coreui-form.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,8 @@ import { FoundationFormComponent } from './pages/forms-page/foundation-form/foun
     FormsPageComponent,
     MaterialFormComponent,
     BootstrapFormComponent,
-    FoundationFormComponent
+    FoundationFormComponent,
+    CoreuiFormComponent
   ],
   entryComponents: [
     InstanceDialogComponent,
@@ -83,11 +87,13 @@ import { FoundationFormComponent } from './pages/forms-page/foundation-form/foun
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    NgbDatepickerModule.forRoot(),
     BsDatepickerModule.forRoot(),
     DynamicFormsCoreModule.forRoot(),
     DynamicFormsMaterialUIModule,
     DynamicFormsBootstrapUIModule,
     DynamicFormsFoundationUIModule,
+    DynamicFormsNGBootstrapUIModule,
     HttpClientModule,
     AppRoutingModule,
     AgGridModule.withComponents([]),
