@@ -106,7 +106,8 @@ export const SAMPLE_FORM_LAYOUT = {
     'demoDatePicker2': {
       element: {
         control: "form-control-sm",
-        label: "col-form-label-sm"
+        label: "col-form-label-sm",
+        container: "form-group-sm"
       },
       grid: {
         host: 'col'
@@ -115,7 +116,8 @@ export const SAMPLE_FORM_LAYOUT = {
     'demoDatePicker3': {
       element: {
         control: "form-control-sm",
-        label: "col-form-label-sm"
+        label: "col-form-label-sm",
+        container: "form-group-sm"
       },
       grid: {
         host: 'col'
