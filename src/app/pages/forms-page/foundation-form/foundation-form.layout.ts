@@ -2,97 +2,100 @@
 // Object.defineProperty(exports, "__esModule", { value: true });
 export const SAMPLE_FORM_LAYOUT = {
     'demoSelect': {
+      element: {
+        container: 'input-container',
+      },
       grid: {
-        container: "grid-x grid-padding-x",
-        host: "small-4 cell",
-        control: "small-4 cell",
+        host: 'grid-padding-x small-8 cell',
       }
     },
     'demoInput': {
-      grid: {
-        container: "grid-x grid-padding-x",
-        host: "small-4 cell",
-        control: "small-4 cell",
-      }
-    },
-    'demoDatePicker': {
       element: {
-        container: 'p-1',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell',
+      }
+    },
+
+    'demoDatePicker': {
+      element: {
+        container: 'input-container',
+      },
+      grid: {
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoSelect2': {
       element: {
-        container: 'p-1',
+        container: 'input-container',
       },
       grid: {
-          host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoInput2': {
       element: {
-        container: 'p-1',
+        container: 'input-container',
       },
       grid: {
-          host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoInput3': {
       element: {
-        container: 'p-2',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoSelect3': {
       element: {
-        container: 'p-2',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoInput4': {
       element: {
-        container: 'p-2',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoInput5': {
       element: {
-        container: 'p-4',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoDatePicker2': {
       element: {
-        container: 'p-4',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoDatePicker3': {
       element: {
-        container: 'p-4',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-4'
+        host: 'grid-padding-x small-4 cell'
       }
     },
     'demoTextArea': {
       element: {
-        container: 'p-5',
+        container: 'input-container',
       },
       grid: {
-        host: 'col-sm-12'
+        host: 'grid-padding-x small-12 cell'
       }
     }
   };
