@@ -10,7 +10,7 @@
     <app-bootstrap-form>
     </app-bootstrap-form>
 
-    <div class="row payments-container">
+    <div class="row justify-container">
       <label class="col-form-label ng-star-inserted">Payments</label>
       <ag-grid-angular
         class="ag-theme-balham"
@@ -22,7 +22,7 @@
     </div>
   </mat-tab>
   <mat-tab label="Foundation">
-    <div class="payments-container">
+    <div class="justify-container">
       <app-foundation-form>
       </app-foundation-form>
 
@@ -36,21 +36,18 @@
       </ag-grid-angular>
     </div>
   </mat-tab>
-  <mat-tab label="Tab 4">
-    <div class="demo-tab-content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-      Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-      In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-      feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-      orci enim rutrum enim, vel tempor sapien arcu a tellus.
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
-      Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-      In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-      feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-      orci enim rutrum enim, vel tempor sapien arcu a tellus.
-    </div>
+  <mat-tab label="Kendo">
+    <app-kendo-form>
+    </app-kendo-form>
+
+    <label class="col-form-label ng-star-inserted">Payments</label>
+    <ag-grid-angular
+      class="ag-theme-balham"
+      style="width: 100%; height:182px"
+      [rowData]="paymentsRecords"
+      [columnDefs]="paymentsFields"
+    >
+    </ag-grid-angular>
   </mat-tab>
   <mat-tab label="Tab 5">
     No content

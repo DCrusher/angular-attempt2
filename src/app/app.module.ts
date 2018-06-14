@@ -18,6 +18,7 @@ import {
 import { DynamicFormsMaterialUIModule } from '@ng-dynamic-forms/ui-material';
 import { DynamicFormsBootstrapUIModule } from '@ng-dynamic-forms/ui-bootstrap';
 import { DynamicFormsFoundationUIModule } from '@ng-dynamic-forms/ui-foundation';
+import { DynamicFormsKendoUIModule } from '@ng-dynamic-forms/ui-kendo';
 
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { DataFetchingService } from './services/data-fetching.service';
@@ -56,6 +57,7 @@ import { FormsPageComponent } from './pages/forms-page/forms-page.component';
 import { MaterialFormComponent } from './pages/forms-page/material-form/material-form.component';
 import { BootstrapFormComponent } from './pages/forms-page/bootstrap-form/bootstrap-form.component';
 import { FoundationFormComponent } from './pages/forms-page/foundation-form/foundation-form.component';
+import { KendoFormComponent } from './pages/forms-page/kendo-form/kendo-form.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,8 @@ import { FoundationFormComponent } from './pages/forms-page/foundation-form/foun
     FormsPageComponent,
     MaterialFormComponent,
     BootstrapFormComponent,
-    FoundationFormComponent
+    FoundationFormComponent,
+    KendoFormComponent
   ],
   entryComponents: [
     InstanceDialogComponent,
@@ -88,6 +91,7 @@ import { FoundationFormComponent } from './pages/forms-page/foundation-form/foun
     DynamicFormsMaterialUIModule,
     DynamicFormsBootstrapUIModule,
     DynamicFormsFoundationUIModule,
+    DynamicFormsKendoUIModule,
     HttpClientModule,
     AppRoutingModule,
     AgGridModule.withComponents([]),
