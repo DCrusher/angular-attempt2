@@ -36,6 +36,7 @@
       </ag-grid-angular>
     </div>
   </mat-tab>
+
   <mat-tab label="Kendo">
     <app-kendo-form>
     </app-kendo-form>
@@ -48,6 +49,22 @@
       [columnDefs]="paymentsFields"
     >
     </ag-grid-angular>
+  </mat-tab>
+  <mat-tab label="CoreUI (Customized)">
+    <app-coreui-form>
+    </app-coreui-form>
+
+    <div class="row payments-container">
+      <label class="col-form-label ng-star-inserted">Payments</label>
+      <ag-grid-angular
+        class="ag-theme-balham"
+        style="width: 100%; height:182px"
+        [rowData]="paymentsRecords"
+        [columnDefs]="paymentsFields"
+      >
+      </ag-grid-angular>
+    </div>
+
   </mat-tab>
   <mat-tab label="Tab 5">
     No content

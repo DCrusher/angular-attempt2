@@ -187,6 +187,23 @@
   dependencies:
     tslib "^1.9.0"
 
+"@coreui/angular@^2.0.0-rc.0":
+  version "2.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@coreui/angular/-/angular-2.0.0-rc.0.tgz#87c76614d4e486685a98320714d2a4ca6a4abd36"
+  dependencies:
+    tslib "^1.9.0"
+
+"@coreui/coreui-plugin-npm-postinstall@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui-plugin-npm-postinstall/-/coreui-plugin-npm-postinstall-1.0.2.tgz#6daeb2ec786580d9c0849b05bc3e8d0222d5c463"
+
+"@coreui/coreui@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-2.0.2.tgz#03197b6ef99559b6a231d77d79989ad046975df3"
+  dependencies:
+    "@coreui/coreui-plugin-npm-postinstall" "^1.0.2"
+    bootstrap "^4.1.1"
+
 "@ng-bootstrap/ng-bootstrap@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-2.1.0.tgz#0cebbf6a39ca13d9a63e368b3b4d1adfc37d3068"
@@ -210,6 +227,10 @@
 "@ng-dynamic-forms/ui-material@^6.0.6":
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-material/-/ui-material-6.0.6.tgz#06b43031cf0ad9e77edfe07a8b533cfddfe66ec2"
+
+"@ng-dynamic-forms/ui-ng-bootstrap@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-ng-bootstrap/-/ui-ng-bootstrap-6.0.6.tgz#2aa265043745238e3bfc1ad7c7fa577afe5dc3e0"
 
 "@ngtools/webpack@6.0.8":
   version "6.0.8"
@@ -1009,9 +1030,13 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap@3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+bootstrap3@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/bootstrap3/-/bootstrap3-3.3.5.tgz#496a4ef6c087214fa96838196d60de645e82591a"
+
+bootstrap@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
