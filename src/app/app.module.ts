@@ -5,12 +5,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AgGridModule } from 'ag-grid-angular';
-import { DynamicFormsCoreModule, DynamicFormControlModel, DynamicFormControl, DYNAMIC_FORM_CONTROL_MAP_FN } from '@ng-dynamic-forms/core';
-import { DynamicFormsMaterialUIModule } from '@ng-dynamic-forms/ui-material';
+
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 import {
+  DynamicFormsCoreModule,
+  DynamicFormControlModel,
+  DynamicFormControl,
   DynamicSelectModel,
+  DYNAMIC_FORM_CONTROL_MAP_FN
 } from '@ng-dynamic-forms/core';
+import { DynamicFormsMaterialUIModule } from '@ng-dynamic-forms/ui-material';
+import { DynamicFormsBootstrapUIModule } from '@ng-dynamic-forms/ui-bootstrap';
+import { DynamicFormsFoundationUIModule } from '@ng-dynamic-forms/ui-foundation';
 
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { DataFetchingService } from './services/data-fetching.service';
@@ -47,6 +54,8 @@ import { RelationFieldComponent } from './components/relation-field/relation-fie
 import { DynamicRelationFieldComponent } from './components/dynamic-relation-field/dynamic-relation-field.component';
 import { FormsPageComponent } from './pages/forms-page/forms-page.component';
 import { MaterialFormComponent } from './pages/forms-page/material-form/material-form.component';
+import { BootstrapFormComponent } from './pages/forms-page/bootstrap-form/bootstrap-form.component';
+import { FoundationFormComponent } from './pages/forms-page/foundation-form/foundation-form.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +70,9 @@ import { MaterialFormComponent } from './pages/forms-page/material-form/material
     RelationFieldComponent,
     DynamicRelationFieldComponent,
     FormsPageComponent,
-    MaterialFormComponent
+    MaterialFormComponent,
+    BootstrapFormComponent,
+    FoundationFormComponent
   ],
   entryComponents: [
     InstanceDialogComponent,
@@ -72,8 +83,11 @@ import { MaterialFormComponent } from './pages/forms-page/material-form/material
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    BsDatepickerModule.forRoot(),
     DynamicFormsCoreModule.forRoot(),
     DynamicFormsMaterialUIModule,
+    DynamicFormsBootstrapUIModule,
+    DynamicFormsFoundationUIModule,
     HttpClientModule,
     AppRoutingModule,
     AgGridModule.withComponents([]),
@@ -104,17 +118,17 @@ import { MaterialFormComponent } from './pages/forms-page/material-form/material
   ],
   providers: [
     DataFetchingService,
-    {
-      provide: DYNAMIC_FORM_CONTROL_MAP_FN,
-      useValue: (model: DynamicFormControlModel): Type<DynamicFormControl> | null  => {
-        switch (model.constructor) {
+    // {
+    //   provide: DYNAMIC_FORM_CONTROL_MAP_FN,
+    //   useValue: (model: DynamicFormControlModel): Type<DynamicFormControl> | null  => {
+    //     switch (model.constructor) {
 
-          case DynamicSelectModel:
-            return DynamicRelationFieldComponent;
+    //       case DynamicSelectModel:
+    //         return DynamicRelationFieldComponent;
 
-          }
-        }
-    }
+    //       }
+    //     }
+    // }
   ],
   bootstrap: [AppComponent]
 })

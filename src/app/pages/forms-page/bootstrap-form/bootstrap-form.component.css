@@ -1,0 +1,23 @@
+#container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.btn {
+  border: 1px solid lightgray !important;
+}
+
+.form-group {
+  padding: 0 3px;
+}
+
+.help-block {
+  position: absolute;
+  width: 500px;
+  left: -60px;
+  margin-top: 12px;
+}
+
+.p-4 {
+  margin-top: 30px;
+}

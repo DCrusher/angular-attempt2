@@ -187,9 +187,21 @@
   dependencies:
     tslib "^1.9.0"
 
+"@ng-bootstrap/ng-bootstrap@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-2.1.0.tgz#0cebbf6a39ca13d9a63e368b3b4d1adfc37d3068"
+
 "@ng-dynamic-forms/core@^6.0.6":
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/core/-/core-6.0.6.tgz#1e69cf43b4e7ab8bcace780e9f7deb61bbdd49b8"
+
+"@ng-dynamic-forms/ui-bootstrap@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-bootstrap/-/ui-bootstrap-6.0.6.tgz#05e789c685cbc7092aad0967846632f252e2ea1a"
+
+"@ng-dynamic-forms/ui-foundation@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-foundation/-/ui-foundation-6.0.6.tgz#69a51df5b562407a561ccf2420425aba724c46a4"
 
 "@ng-dynamic-forms/ui-material@^6.0.6":
   version "6.0.6"
@@ -900,6 +912,10 @@ boom@2.x.x:
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
+
+bootstrap@3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -2406,6 +2422,13 @@ forwarded@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
 
+foundation-sites@6.4.3:
+  version "6.4.3"
+  resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.4.3.tgz#ea89eb599badf6f03dd526c51f00bdb942a844f6"
+  dependencies:
+    jquery ">=3.0.0"
+    what-input "^4.1.3"
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -3392,6 +3415,10 @@ jasminewd2@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
 
+jquery@>=3.0.0:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 js-base64@^2.1.8:
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.5.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
@@ -4033,6 +4060,10 @@ neo-async@^2.5.0:
 next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
+
+ngx-bootstrap@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-2.0.5.tgz#83aab39d1e4fe811fad2b34f7927f9ce19d68daa"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -5151,9 +5182,19 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
+rxjs-compat@^6.2.0:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.2.1.tgz#f5a5e4bd700db414e82aa7cb34e5c9222c6d3756"
+
 rxjs@^6.0.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.2.0.tgz#e024d0e180b72756a83c2aaea8f25423751ba978"
+  dependencies:
+    tslib "^1.9.0"
+
+rxjs@^6.2.0:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.2.1.tgz#246cebec189a6cbc143a3ef9f62d6f4c91813ca1"
   dependencies:
     tslib "^1.9.0"
 
@@ -6427,6 +6468,10 @@ websocket-driver@>=0.5.1:
 websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
+
+what-input@^4.1.3:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/what-input/-/what-input-4.3.1.tgz#b8ea7554ba1d9171887c4c6addf28185fec3d31d"
 
 when@~3.6.x:
   version "3.6.4"
