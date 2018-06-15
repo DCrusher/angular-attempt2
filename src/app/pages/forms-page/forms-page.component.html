@@ -99,4 +99,19 @@
       </ag-grid-angular>
     </div>
   </mat-tab>
+  <mat-tab label="Basic">
+    <div class="justify-container">
+      <app-basic-form>
+      </app-basic-form>
+
+      <label class="col-form-label ng-star-inserted">Payments</label>
+      <ag-grid-angular
+        class="ag-theme-balham"
+        style="width: 100%; height:182px"
+        [rowData]="paymentsRecords"
+        [columnDefs]="paymentsFields"
+      >
+      </ag-grid-angular>
+    </div>
+  </mat-tab>
 </mat-tab-group>

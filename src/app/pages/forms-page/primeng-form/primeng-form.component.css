@@ -1,0 +1,8 @@
+.ui-widget {
+  width: 100% !important;
+}
+
+button.ui-datepicker-trigger {
+  width: auto !important;
+  margin-left: -32px;
+}

@@ -1,0 +1,14 @@
+<section>
+  <form [formGroup]="formGroup">
+    <dynamic-basic-form-control
+      *ngFor="let controlModel of formModel" class="form-row"
+      [model]="controlModel"
+      [group]="formGroup"
+    >
+      <!-- <ng-template modelId="demoSelect3">
+        <p>Distribute the remaining amount to the loan lenders by % owned</p>
+      </ng-template> -->
+    </dynamic-basic-form-control
+    >
+  </form>
+</section>

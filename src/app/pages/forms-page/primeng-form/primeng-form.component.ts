@@ -2,14 +2,15 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DynamicFormControlModel, DynamicFormLayout, DynamicFormService } from '@ng-dynamic-forms/core';
 
-import { SAMPLE_FORM_LAYOUT } from '../ng-bootstrap-form/ng-bootstrap.layout';
-import { SAMPLE_FORM_MODEL } from '../ng-bootstrap-form/ng-bootstrap.model';
+import { SAMPLE_FORM_LAYOUT } from './primeng.layout';
+import { SAMPLE_FORM_MODEL } from './primeng.model';
 
 @Component({
   selector: 'app-primeng-form',
   templateUrl: './primeng-form.component.html',
   encapsulation: ViewEncapsulation.Native,
   styleUrls: [
+    './primeng-form.component.css',
     '../../../../../node_modules/primeng/resources/themes/omega/theme.css',
     '../../../../../node_modules/primeng/resources/primeng.min.css',
     '../../../../../node_modules/quill/dist/quill.core.css',

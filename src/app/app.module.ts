@@ -16,6 +16,7 @@ import {
   DynamicSelectModel,
   DYNAMIC_FORM_CONTROL_MAP_FN
 } from '@ng-dynamic-forms/core';
+import { DynamicFormsBasicUIModule } from '@ng-dynamic-forms/ui-basic';
 import { DynamicFormsMaterialUIModule } from '@ng-dynamic-forms/ui-material';
 import { DynamicFormsBootstrapUIModule } from '@ng-dynamic-forms/ui-bootstrap';
 import { DynamicFormsFoundationUIModule } from '@ng-dynamic-forms/ui-foundation';
@@ -64,6 +65,7 @@ import { KendoFormComponent } from './pages/forms-page/kendo-form/kendo-form.com
 import { CoreuiFormComponent } from './pages/forms-page/coreui-form/coreui-form.component';
 import { NgBootstrapFormComponent } from './pages/forms-page/ng-bootstrap-form/ng-bootstrap-form.component';
 import { PrimengFormComponent } from './pages/forms-page/primeng-form/primeng-form.component';
+import { BasicFormComponent } from './pages/forms-page/basic-form/basic-form.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +86,8 @@ import { PrimengFormComponent } from './pages/forms-page/primeng-form/primeng-fo
     KendoFormComponent,
     CoreuiFormComponent,
     NgBootstrapFormComponent,
-    PrimengFormComponent
+    PrimengFormComponent,
+    BasicFormComponent
   ],
   entryComponents: [
     InstanceDialogComponent,
@@ -98,6 +101,7 @@ import { PrimengFormComponent } from './pages/forms-page/primeng-form/primeng-fo
     NgbDatepickerModule.forRoot(),
     BsDatepickerModule.forRoot(),
     DynamicFormsCoreModule.forRoot(),
+    DynamicFormsBasicUIModule,
     DynamicFormsMaterialUIModule,
     DynamicFormsBootstrapUIModule,
     DynamicFormsFoundationUIModule,

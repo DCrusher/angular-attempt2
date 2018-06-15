@@ -1,126 +1,59 @@
 // 'use strict';
 // Object.defineProperty(exports, "__esModule", { value: true });
 export const SAMPLE_FORM_LAYOUT = {
-    'first-row': {
-      element: {
-          control: "form-row"
-      }
-    },
     'demoSelect': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-          host: "col-sm-8"
+          host: "ui-g-8"
       }
     },
     'demoInput': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-          host: 'col-sm-4'
-      }
-    },
-    'second-row': {
-      element: {
-          control: "form-row"
+          host: "ui-g-4"
       }
     },
     'demoDatePicker': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm",
-        container: "form-group-sm"
-      },
       grid: {
-          host: 'col'
+        host: "ui-g-4"
       }
     },
     'demoSelect2': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-          host: 'col'
+        host: "ui-g-4"
       }
     },
     'demoInput2': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-          host: 'col'
-      }
-    },
-    'third-row': {
-      element: {
-          control: "form-row"
+        host: "ui-g-4"
       }
     },
     'demoInput3': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-        host: 'col'
+        host: "ui-g-4"
       }
     },
     'demoSelect3': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-        host: 'col'
+        host: "ui-g-4"
       }
     },
     'demoInput4': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-        host: 'col'
-      }
-    },
-    'fourth-row': {
-      element: {
-          control: "form-row"
+        host: "ui-g-4"
       }
     },
     'demoInput5': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm"
-      },
       grid: {
-        host: 'col'
+        host: "ui-g-4"
       }
     },
     'demoDatePicker2': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm",
-        container: "form-group-sm"
-      },
       grid: {
-        host: 'col'
+        host: "ui-g-4"
       }
     },
     'demoDatePicker3': {
-      element: {
-        control: "form-control-sm",
-        label: "col-form-label-sm",
-        container: "form-group-sm"
-      },
       grid: {
-        host: 'col'
+        host: "ui-g-4"
       }
     },
     'demoTextArea': {

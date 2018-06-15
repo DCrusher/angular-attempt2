@@ -212,6 +212,10 @@
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/core/-/core-6.0.6.tgz#1e69cf43b4e7ab8bcace780e9f7deb61bbdd49b8"
 
+"@ng-dynamic-forms/ui-basic@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-basic/-/ui-basic-6.0.6.tgz#2d150f0131fcd01a51db941faf42fc47f127f014"
+
 "@ng-dynamic-forms/ui-bootstrap@^6.0.6":
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-bootstrap/-/ui-bootstrap-6.0.6.tgz#05e789c685cbc7092aad0967846632f252e2ea1a"
@@ -228,7 +232,7 @@
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-material/-/ui-material-6.0.6.tgz#06b43031cf0ad9e77edfe07a8b533cfddfe66ec2"
 
-"@ng-dynamic-forms/ui-ng-bootstrap@6.0.6":
+"@ng-dynamic-forms/ui-ng-bootstrap@^6.0.6":
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@ng-dynamic-forms/ui-ng-bootstrap/-/ui-ng-bootstrap-6.0.6.tgz#2aa265043745238e3bfc1ad7c7fa577afe5dc3e0"
 
