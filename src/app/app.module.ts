@@ -21,6 +21,7 @@ import { DynamicFormsBootstrapUIModule } from '@ng-dynamic-forms/ui-bootstrap';
 import { DynamicFormsFoundationUIModule } from '@ng-dynamic-forms/ui-foundation';
 import { DynamicFormsKendoUIModule } from '@ng-dynamic-forms/ui-kendo';
 import { DynamicFormsNGBootstrapUIModule } from '@ng-dynamic-forms/ui-ng-bootstrap';
+import { DynamicFormsPrimeNGUIModule } from '@ng-dynamic-forms/ui-primeng';
 
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { DataFetchingService } from './services/data-fetching.service';
@@ -61,6 +62,8 @@ import { BootstrapFormComponent } from './pages/forms-page/bootstrap-form/bootst
 import { FoundationFormComponent } from './pages/forms-page/foundation-form/foundation-form.component';
 import { KendoFormComponent } from './pages/forms-page/kendo-form/kendo-form.component';
 import { CoreuiFormComponent } from './pages/forms-page/coreui-form/coreui-form.component';
+import { NgBootstrapFormComponent } from './pages/forms-page/ng-bootstrap-form/ng-bootstrap-form.component';
+import { PrimengFormComponent } from './pages/forms-page/primeng-form/primeng-form.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +82,9 @@ import { CoreuiFormComponent } from './pages/forms-page/coreui-form/coreui-form.
     BootstrapFormComponent,
     FoundationFormComponent,
     KendoFormComponent,
-    CoreuiFormComponent
+    CoreuiFormComponent,
+    NgBootstrapFormComponent,
+    PrimengFormComponent
   ],
   entryComponents: [
     InstanceDialogComponent,
@@ -98,6 +103,7 @@ import { CoreuiFormComponent } from './pages/forms-page/coreui-form/coreui-form.
     DynamicFormsFoundationUIModule,
     DynamicFormsKendoUIModule,
     DynamicFormsNGBootstrapUIModule,
+    DynamicFormsPrimeNGUIModule,
     HttpClientModule,
     AppRoutingModule,
     AgGridModule.withComponents([]),

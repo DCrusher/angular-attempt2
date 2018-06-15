@@ -1,0 +1,25 @@
+#ngbContainer >>> .btn {
+  height: 31px !important;
+  font-size: small !important;
+  border: 1px solid lightgray;
+}
+
+#ngbContainer >>> label {
+  padding-bottom: 0px !important;
+  margin-bottom: auto !important;
+}
+
+#ngbContainer >>> .form-group {
+  margin-bottom: 0px !important;
+}
+
+>>> .text-muted {
+  position: absolute;
+  width: 500px;
+  margin-left: -60px;
+  margin-top: 11px;
+}
+
+>>> #fourth-row {
+  margin-top: 30px;
+}
