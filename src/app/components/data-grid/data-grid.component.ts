@@ -13,7 +13,7 @@ export class DataGridComponent implements OnInit {
   @Input() model: any;
   @Output() rowSelected = new EventEmitter<any>();
 
-  private records: any[];
+  public records: any[];
   private fields: any[];
   public selectedRow: any;
 
